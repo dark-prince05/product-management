@@ -115,6 +115,9 @@ body {
   width: 100%;
   border-collapse: collapse;
 }
+tbody tr:hover {
+  background-color: #e9f5ff;
+}
 
 .product-table th,
 .product-table td {
@@ -264,7 +267,7 @@ label {
 }
 
 .primary-btn {
-  background: #22c55e;
+  background: #127c49;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;

@@ -13,7 +13,6 @@ export default function App() {
   const [sortBy, setSortBy] = useState("name");
   const [order, setOrder] = useState("asc");
   const [error, setError] = useState("");
-  const [showForm, setShowForm] = useState(false);
   const dialogRef = useRef();
 
   const openDialog = () => {
@@ -100,7 +99,6 @@ export default function App() {
               className="primary-btn"
               onClick={() => {
                 setEditing(null);
-                setShowForm(true);
                 openDialog();
               }}
             >
