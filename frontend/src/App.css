@@ -87,3 +87,111 @@ body {
   display: flex;
   gap: 0.5rem;
 }
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 670px;
+  width: calc(100% - 4rem);
+  margin: auto;
+}
+
+.product-card-body {
+  padding: 10px;
+}
+
+.product-title {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.col-id {
+  width: 60px;
+}
+
+.col-price {
+  width: 120px;
+}
+
+.col-stock {
+  width: 110px;
+}
+
+.col-actions {
+  width: 150px;
+  text-align: right;
+}
+
+.loading-text {
+  text-align: center;
+  color: gray;
+}
+
+.empty-text {
+  text-align: center;
+  color: #777;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.product-description {
+  color: #555;
+}
+
+.action-buttons > button {
+  margin-left: 0.2rem;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #fff;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.edit-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #fff;
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
