@@ -35,6 +35,10 @@ body {
   flex: 1 1 100%;
 }
 
+.form-group > textarea {
+  resize: vertical;
+}
+
 .form-label {
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -217,7 +221,7 @@ tbody tr:hover {
 }
 
 .form-group label {
-  font-weight: 100;
+  font-weight: 500;
   margin-bottom: 0.4rem;
 }
 
@@ -350,6 +354,13 @@ dialog::backdrop {
     width: calc(100% - 1rem);
   }
   .search-sort-bar {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal {
     padding: 1rem;
     width: calc(100% - 2rem);
   }
