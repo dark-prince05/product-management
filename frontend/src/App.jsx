@@ -47,7 +47,7 @@ export default function App() {
         await api.post("/products", payload);
       }
       setEditing(null);
-      setShowForm(false);
+      closeDialog();
       await loadProducts();
     } catch (e) {
       setError(e?.response?.data?.error || e.message);
