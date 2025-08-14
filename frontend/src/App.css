@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .custom-card {
@@ -7,9 +8,6 @@ body {
   border-radius: 6px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.075);
   padding: 1rem;
-  max-width: 500px;
-  width: calc(100% - 4rem);
-  margin: auto;
   border: 1px solid #6c757d;
 }
 
@@ -94,8 +92,7 @@ body {
   border-radius: 6px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 670px;
-  width: calc(100% - 4rem);
+  max-width: 720px;
   margin: auto;
 }
 
@@ -206,7 +203,7 @@ body {
   align-items: flex-end;
   max-width: 670px;
   width: calc(100% - 4rem);
-  box-shadow: 0 0 10px #00000050;
+  box-shadow: 0 0 5px #00000050;
   padding: 2rem;
   margin: auto;
   background-color: #f8f9fa;
@@ -236,4 +233,100 @@ label {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.primary-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+  background: #157347;
+}
+
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+}
+
+.product-list {
+  margin-bottom: 1rem;
+}
+
+dialog {
+  border: none;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(2px);
+  background-color: #00000090;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 450px;
+  width: calc(100% - 4rem);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header > h2 {
+  margin-top: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
