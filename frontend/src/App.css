@@ -126,6 +126,10 @@ body {
   text-align: left;
 }
 
+.product-table th {
+  background-color: #f8f9fa;
+}
+
 .col-id {
   width: 60px;
 }
@@ -194,4 +198,42 @@ body {
 .delete-button:hover {
   background-color: #dc3545;
   color: white;
+}
+
+.search-sort-bar {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  max-width: 670px;
+  width: calc(100% - 4rem);
+  box-shadow: 0 0 10px #00000050;
+  padding: 2rem;
+  margin: auto;
+  background-color: #f8f9fa;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.input-field,
+.select-field {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.input-field:focus,
+.select-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
